@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Margaret Baxter</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+           
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Website name</h1>      
+            <p>About me</p>
+        </div>
+        
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" <button class="btn btn" type="button" data-toggle="collapse" data-target="#clpsHome" aria-expanded="true" onclick="clpsnavbuttons(event, this)" id="clpsnavhombtn" aria-controls="clpsHome">
+                    Home
+                </button></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a <button class="btn btn" type="button" data-toggle="collapse" data-target="#clpsResearch" aria-expanded="false" onclick="clpsnavbuttons(event, this)" id="clpsnavpubbtn" aria-controls="clpsResearch">
+                    Research
+                    </button></a></li>
+                <li><a <button class="btn btn" type="button" data-toggle="collapse" data-target="#clpsProjects" aria-expanded="false" onclick="clpsnavbuttons(event, this)" id="clpsnavprjbtn" aria-controls="clpsProjects">
+                    Projects
+                  </button></a></li>
+                <li><a <button class="btn btn" type="button" data-toggle="collapse" data-target="#clpsResume" aria-expanded="false" onclick="clpsnavbuttons(event, this)" id="clpsnavresbtn" aria-controls="clpsResume">
+                    Resume
+                  </button></a></li>              
+                <li><a <button class="btn btn" type="button" data-toggle="collapse" data-target="#clpsOtherWorks" aria-expanded="false" onclick="clpsnavbuttons(event, this)" id="clpsnavothbtn" aria-controls="clpsOtherWorks">
+                    Other Works
+                  </button></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <script>
+            function clpsnavbuttons(event, button) {
+                var openacrd = $(".collapse.in");
+                if(openacrd.length == 1 && openacrd[0].id == button.getAttribute("aria-controls"))
+                    event.stopPropagation();
+                else
+                    openacrd.collapse("hide");                
+            }
+        </script>
+
+        <div class="panel-group" id="accordion">
+        <div class="panel">
+
+        <div class="collapse in" id="clpsHome">
+        <div class="card card-body">
+        <h1>Home</h1>
+
+        </div>
+        </div>
+            
+        <div class="collapse" id="clpsResearch">
+        <div class="card card-body">
+        <h1>Publications</h1>
+        <p>
+        <button class="btn btn" type="button" data-toggle="collapse" data-target="#clpspaper" aria-expanded="false">
+            Paper
+        </button>
+            
+        <div class="collapse" id="clpspaper">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+        </p>
+        
+        <p>
+        <button class="btn btn" type="button" data-toggle="collapse" data-target="#clpspaper1" aria-expanded="false">
+            Paper
+        </button>
+            
+        <div class="collapse" id="clpspaper1">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+        </p>
+        </div>
+        </div>
+        
+        <div class="collapse" id="clpsProjects">
+        <div class="card card-body">
+        <h1>Projects</h1>
+        <p>
+        <button class="btn btn" type="button" data-toggle="collapse" data-target="#clpsP1" aria-expanded="false">
+            Project 1
+        </button>
+            
+        <div class="collapse" id="clpsP1">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+        </p>
+          
+        <p>
+        <button class="btn btn" type="button" data-toggle="collapse" data-target="#clpsP2" aria-expanded="false">
+            Project 2
+        </button>
+            
+        <div class="collapse" id="clpsP2">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+        </p>
+            
+        <p>
+        <button class="btn btn" type="button" data-toggle="collapse" data-target="#clpsP3" aria-expanded="false">
+            Project 3
+        </button>
+            
+        <div class="collapse" id="clpsP3">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+        </p>
+           
+        <p>
+        <button class="btn btn" type="button" data-toggle="collapse" data-target="#clpsP4" aria-expanded="false">
+            Project 4
+        </button>
+            
+        <div class="collapse" id="clpsP4">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+        </p>
+        </div>
+        </div>
+
+        <div class="collapse" id="clpsResume">
+        <div class="card card-body">
+        <h1>Resume</h1>
+
+        </div>
+        </div>
+
+        <div class="collapse" id="clpsOtherWorks">
+        <div class="card card-body">
+        <h1>Other Works</h1>
+        
+        </div>
+        </div>
+
+        </div>
+        </div>
+
+    </div>
+        
+    </body>
+</html>
 
