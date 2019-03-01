@@ -45,6 +45,25 @@ b, strong {
     grid-gap: 4px;
 }
 
+.grid-container-detail {
+    display: grid;
+    grid: auto / 64% auto;
+    grid-gap: 10px;
+}
+
+.grid-container-detail2 {
+    display: grid;
+    grid: auto / 56.8% auto;
+    grid-gap: 4px;
+}
+
+.grid-container-detail3 {
+    display: grid;
+    grid: auto / auto 41.2% auto;
+    grid-gap: 4px;
+    padding-bottom: 1em;
+}
+
 .grid-container-projects {
     display: grid;
     grid: 160px / 160px auto;
@@ -124,4 +143,9 @@ b, strong {
 
 .h3-short {
     margin-top: 0;
+}
+
+.img-full {
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
