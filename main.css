@@ -57,6 +57,12 @@ b, strong {
         grid-gap: 4px;
 }
 
+.img-projects {
+    border: 0;
+    height: 160px;
+    width: 160px;
+}
+
 @media only screen and (max-width: 768px) {
     .grid-container {
         display: grid;
@@ -76,6 +82,10 @@ b, strong {
         grid-gap: 4px;
     }
     
+    .img-projects {
+        height: 120px;
+        width: 120px;
+    }
 }
 
 @media only screen and (max-width: 550px) {
