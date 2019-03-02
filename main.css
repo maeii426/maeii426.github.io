@@ -76,6 +76,13 @@ b, strong {
         grid-gap: 4px;
 }
 
+.grid-container-fabdym {
+    display: grid;
+    grid: auto / auto auto;
+    grid-gap: 4px;
+}
+
+
 .img-projects {
     border: 0;
     height: 160px;
