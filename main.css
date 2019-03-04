@@ -78,7 +78,7 @@ b, strong {
 
 .grid-container-fabdym {
     display: grid;
-    grid: auto / 25% 25% auto;
+    grid: auto / 33% 33% auto;
     grid-gap: 4px;
 }
 
